@@ -5766,6 +5766,13 @@ opencollective-postinstall@^2.0.2:
   resolved "https://registry.npm.taobao.org/opencollective-postinstall/download/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
   integrity sha1-eg//l49tv6TQBiOPusmO1BmMMlk=
 
+openteam-postinstall@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/openteam-postinstall/download/openteam-postinstall-1.0.2.tgz#c31e98eda2c787caa8ce2b3572d665eb08cc9916"
+  integrity sha1-wx6Y7aLHh8qozis1ctZl6wjMmRY=
+  dependencies:
+    lodash "^4.17.15"
+
 opn@^5.5.0:
   version "5.5.0"
   resolved "https://registry.npm.taobao.org/opn/download/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
@@ -8155,6 +8162,14 @@ vuepress-plugin-gitalk-maker@^0.1.0:
   integrity sha1-ij+emilJ1VnA7SfcSKhpV3aF4gw=
   dependencies:
     gitalk "^1.5.0"
+
+vuepress-plugin-gotop-plus@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-gotop-plus/download/vuepress-plugin-gotop-plus-1.0.4.tgz#07e42414a2c42cc28c651cce4d1190b11e5c6fe1"
+  integrity sha1-B+QkFKLELMKMZRzOTRGQsR5cb+E=
+  dependencies:
+    lodash.debounce "^4.0.8"
+    openteam-postinstall "^1.0.2"
 
 vuepress-plugin-reading-time@^0.1.1:
   version "0.1.1"

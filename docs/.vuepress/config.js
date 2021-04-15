@@ -82,5 +82,13 @@ module.exports = {
         disableGlobalUI: false,
       }
     ],
+    [ // 回到顶部插件
+      'vuepress-plugin-gotop-plus', {
+        // 是否在移动设备上显示(default: true)
+        mobileShow: false,
+        // 回到页首元素显示触发的高度阈值(default: 50)
+        threshold: 50
+      }
+    ],
   ],
 };

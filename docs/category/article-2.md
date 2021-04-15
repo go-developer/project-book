@@ -17,6 +17,7 @@ export default {
 <style>
 .box-vue { color: red; }
 </style>
+```
 
 ## 为二级标题
 
