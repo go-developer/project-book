@@ -90,5 +90,16 @@ module.exports = {
         threshold: 50
       }
     ],
-  ],
+    [ // 为当前页面生成二维码
+      'qrcode',
+      {
+        labelText: '生成二维码', // displayed text
+        size: 'small' // QR code size
+      }],
+    [
+      '@vuepress/active-header-links', {
+        sidebarLinkSelector: '.sidebar-link',
+        headerAnchorSelector: '.header-anchor'
+      }],
+  ]
 };

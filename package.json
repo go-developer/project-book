@@ -11,6 +11,7 @@
   "author": "Feng L.H.",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.8.2",
     "vuepress": "^1.5.2",
     "vuepress-plugin-demo-code": "^0.5.2",
     "vuepress-plugin-gitalk-maker": "^0.1.0",
