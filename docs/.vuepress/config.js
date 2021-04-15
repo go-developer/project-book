@@ -59,6 +59,28 @@ module.exports = {
         },
         demoCodeMark: 'demo-code',
         copyOptions: { align: 'top', selector: '.demo-and-code-wrapper div[class*="language-"] pre' },
-      }]
+      }],
+    [ // 阅读时长组件
+      'vuepress-plugin-reading-time',
+      {
+        excludes: ['/about', '/tag/.*']
+      }],
+    [ // 页面内锚点插件
+      'vuepress-plugin-right-anchor',
+      {
+        showDepth: 5,
+        ignore: [
+          '/',
+          '/api/'
+          // 更多...
+        ],
+        expand: {
+          default: true,
+          trigger: 'hover'
+        },
+        customClass: 'palette',
+        disableGlobalUI: false,
+      }
+    ],
   ],
 };

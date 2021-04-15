@@ -1,5 +1,6 @@
 ---
 title: Article 2
+readingTime: { text: "Not so long!", minutes: 3 }
 ---
 
 # Article 2
@@ -16,4 +17,9 @@ export default {
 <style>
 .box-vue { color: red; }
 </style>
-` ` `
+
+## 为二级标题
+
+dhaksdjasj
+
+### 三级标题
