@@ -12,7 +12,6 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.8.2",
-    "nprogress": "^0.2.0",
     "vuepress": "^1.5.2",
     "vuepress-plugin-demo-code": "^0.5.2",
     "vuepress-plugin-gitalk-maker": "^0.1.0",
