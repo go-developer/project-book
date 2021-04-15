@@ -17,4 +17,20 @@ module.exports = {
     repo: "https://github.com/zpfz/vuepress-creator",
     editLinks: false,
   },
+  plugins: [
+    [
+      'gitalk-maker',
+      {
+        gitalkConfig: {
+          clientID: 'a2858e44e6f579dcfe33',
+          clientSecret: 'dca80a474aab4b0017bd6d5c8531777d0dd24bd1',
+          repo: 'project-book',
+          owner: 'go-developer',
+          admin: ['go-developer'],
+          // id: location.pathname, // 无法配置默认用 location.pathname
+          distractionFreeMode: false, // Facebook-like distraction free mode
+        },
+      },
+    ],
+  ],
 };
