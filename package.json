@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.5.2",
+    "vuepress-plugin-demo-code": "^0.5.2",
     "vuepress-plugin-gitalk-maker": "^0.1.0"
   },
   "dependencies": {
