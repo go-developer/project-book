@@ -8233,6 +8233,11 @@ vuepress-plugin-smooth-scroll@^0.0.9:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
+vuepress-plugin-thirdparty-search@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-thirdparty-search/download/vuepress-plugin-thirdparty-search-1.0.2.tgz#1cb9307ae9e3b7925afa5b1f1e78b867bcdef588"
+  integrity sha1-HLkweunjt5Ja+lsfHni4Z7ze9Yg=
+
 vuepress-theme-antdocs2@^0.0.5:
   version "0.0.5"
   resolved "https://registry.npm.taobao.org/vuepress-theme-antdocs2/download/vuepress-theme-antdocs2-0.0.5.tgz#8c7b5e4e80147d41375b52a6c2f044d06a4dd2b4"
