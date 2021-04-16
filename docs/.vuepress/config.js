@@ -32,39 +32,6 @@ module.exports = {
         },
       },
     ],
-    [ // 代码样式插件
-      'demo-code',
-      {
-        jsLibs: [
-          // umd
-          'https://unpkg.com/tua-storage/dist/TuaStorage.umd.js',
-        ],
-        cssLibs: [
-          'https://unpkg.com/animate.css@3.7.0/animate.min.css',
-        ],
-        showText: 'show code',
-        hideText: 'hide',
-        styleStr: 'text-decoration: underline;',
-        minHeight: 200,
-        onlineBtns: {
-          codepen: true,
-          jsfiddle: true,
-          codesandbox: true,
-        },
-        codesandbox: {
-          deps: { 'lodash': 'latest' },
-          json: '',
-          query: '',
-          embed: '',
-        },
-        demoCodeMark: 'demo-code',
-        copyOptions: { align: 'top', selector: '.demo-and-code-wrapper div[class*="language-"] pre' },
-      }],
-    [ // 阅读时长组件
-      'vuepress-plugin-reading-time',
-      {
-        excludes: ['/about', '/tag/.*']
-      }],
     [ // 回到顶部插件
       'vuepress-plugin-gotop-plus', {
         // 是否在移动设备上显示(default: true)
@@ -99,5 +66,6 @@ module.exports = {
         ]
       }
     ],
+    ['fulltext-search'], // 支持全文搜索,此插件和第三方搜索插件冲突,谁生效
   ]
 };

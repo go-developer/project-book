@@ -14,7 +14,7 @@
     "@vuepress/plugin-active-header-links": "^1.8.2",
     "vuepress": "^1.5.2",
     "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-demo-code": "^0.5.2",
+    "vuepress-plugin-fulltext-search": "^2.2.0",
     "vuepress-plugin-gitalk-maker": "^0.1.0",
     "vuepress-plugin-gotop-plus": "^1.0.4",
     "vuepress-plugin-reading-time": "^0.1.1",
