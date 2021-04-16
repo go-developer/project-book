@@ -1,5 +1,5 @@
 module.exports = {
-  theme: "antdocs",
+  theme: "antdocs2",
   title: "文档中心",
   description: "个人项目文档中心.",
   base: "/",

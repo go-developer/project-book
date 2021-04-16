@@ -17,7 +17,8 @@
     "vuepress-plugin-demo-code": "^0.5.2",
     "vuepress-plugin-gitalk-maker": "^0.1.0",
     "vuepress-plugin-gotop-plus": "^1.0.4",
-    "vuepress-plugin-reading-time": "^0.1.1"
+    "vuepress-plugin-reading-time": "^0.1.1",
+    "vuepress-theme-antdocs2": "^0.0.5"
   },
   "dependencies": {
     "core-js": "^2.6.11",

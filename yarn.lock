@@ -1151,7 +1151,7 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
-"@vuepress/plugin-active-header-links@1.8.2", "@vuepress/plugin-active-header-links@^1.7.1", "@vuepress/plugin-active-header-links@^1.8.2":
+"@vuepress/plugin-active-header-links@1.8.2", "@vuepress/plugin-active-header-links@^1.5.0", "@vuepress/plugin-active-header-links@^1.7.1", "@vuepress/plugin-active-header-links@^1.8.2":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-active-header-links/download/@vuepress/plugin-active-header-links-1.8.2.tgz#0cb9b29c826dd97d35357a9b09c962ef782cb793"
   integrity sha1-DLmynIJt2X01NXqbCcli73gst5M=
@@ -1165,7 +1165,7 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-nprogress@1.8.2", "@vuepress/plugin-nprogress@^1.7.1":
+"@vuepress/plugin-nprogress@1.8.2", "@vuepress/plugin-nprogress@^1.5.0", "@vuepress/plugin-nprogress@^1.7.1":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-nprogress/download/@vuepress/plugin-nprogress-1.8.2.tgz#dc6c082925420c8c59ecb7fc2d4a9401f6d4664a"
   integrity sha1-3GwIKSVCDIxZ7Lf8LUqUAfbUZko=
@@ -1179,7 +1179,7 @@
   dependencies:
     "@vuepress/shared-utils" "1.8.2"
 
-"@vuepress/plugin-search@1.8.2", "@vuepress/plugin-search@^1.7.1":
+"@vuepress/plugin-search@1.8.2", "@vuepress/plugin-search@^1.5.0", "@vuepress/plugin-search@^1.7.1":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.8.2.tgz#74b92f663acf6b4560e15dc0442a84c4e874e206"
   integrity sha1-dLkvZjrPa0Vg4V3ARCqExOh04gY=
@@ -1503,7 +1503,7 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-ant-design-vue@^1.7.2:
+ant-design-vue@^1.5.5, ant-design-vue@^1.7.2:
   version "1.7.4"
   resolved "https://registry.npm.taobao.org/ant-design-vue/download/ant-design-vue-1.7.4.tgz?cache=0&sync_timestamp=1616896294765&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fant-design-vue%2Fdownload%2Fant-design-vue-1.7.4.tgz#854e90985dc0fa9ccc6d681c104560c00eaaf855"
   integrity sha1-hU6QmF3A+pzMbWgcEEVgwA6q+FU=
@@ -8172,7 +8172,7 @@ vuepress-plugin-code-copy@^1.0.6:
   resolved "https://registry.npm.taobao.org/vuepress-plugin-code-copy/download/vuepress-plugin-code-copy-1.0.6.tgz#6431dab764b48b5b203e4936d98b1943651ce4ad"
   integrity sha1-ZDHat2S0i1sgPkk22YsZQ2Uc5K0=
 
-vuepress-plugin-container@^2.0.2, vuepress-plugin-container@^2.1.5:
+vuepress-plugin-container@^2.0.2, vuepress-plugin-container@^2.1.2, vuepress-plugin-container@^2.1.5:
   version "2.1.5"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-container/download/vuepress-plugin-container-2.1.5.tgz#37fff05662fedbd63ffd3a5463b2592c7a7f3133"
   integrity sha1-N//wVmL+29Y//TpUY7JZLHp/MTM=
@@ -8225,6 +8225,31 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   integrity sha1-bv8tTBhsypF8yfffKwr33nyMZDg=
   dependencies:
     smoothscroll-polyfill "^0.4.3"
+
+vuepress-plugin-smooth-scroll@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-smooth-scroll/download/vuepress-plugin-smooth-scroll-0.0.9.tgz#6c5d01db60def3d7b976b53404e56b97da9e8f39"
+  integrity sha1-bF0B22De89e5drU0BOVrl9qejzk=
+  dependencies:
+    smoothscroll-polyfill "^0.4.4"
+
+vuepress-theme-antdocs2@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/vuepress-theme-antdocs2/download/vuepress-theme-antdocs2-0.0.5.tgz#8c7b5e4e80147d41375b52a6c2f044d06a4dd2b4"
+  integrity sha1-jHteToAUfUE3W1KmwvBE0GpN0rQ=
+  dependencies:
+    "@vuepress/plugin-active-header-links" "^1.5.0"
+    "@vuepress/plugin-nprogress" "^1.5.0"
+    "@vuepress/plugin-search" "^1.5.0"
+    ant-design-vue "^1.5.5"
+    core-js "^2.6.11"
+    docsearch.js "^2.5.2"
+    less "^3.10.3"
+    less-loader "^5.0.0"
+    lodash "^4.17.15"
+    vuepress-plugin-container "^2.1.2"
+    vuepress-plugin-smooth-scroll "^0.0.9"
+    vuex "^3.1.3"
 
 vuepress-theme-antdocs@^1.2.2:
   version "1.2.2"
