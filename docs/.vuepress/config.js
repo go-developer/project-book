@@ -101,5 +101,6 @@ module.exports = {
         sidebarLinkSelector: '.sidebar-link',
         headerAnchorSelector: '.header-anchor'
       }],
+    ['vuepress-plugin-code-copy', true], // 代码复制插件
   ]
 };

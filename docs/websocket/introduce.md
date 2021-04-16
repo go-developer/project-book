@@ -6,6 +6,10 @@ title: 项目简介
 
 本项目提供 **`websocket`** 框架, 基于 **`gin`** 和 **`melody`** 实现, 旨在帮助开发者快速搭建 websocket服务, 专注于业务本身, 忽略底层细节
 
+## 项目地址
+
+[Github项目仓库](https://github.com/go-developer/websocket)
+
 ## 项目特性
 
 ### 已实现
@@ -19,6 +23,8 @@ title: 项目简介
 <a-checkbox checked>一对一消息推送</a-checkbox>
 <br/>
 <a-checkbox checked>一对多消息广播</a-checkbox>
+<br/>
+<a-checkbox checked>指令自动调度</a-checkbox>
 
 ### TODO 任务
 
@@ -32,9 +38,7 @@ title: 项目简介
 ## 项目迭代时间线
 
 <a-timeline>
-  <a-timeline-item>step1 2015-09-01</a-timeline-item>
-  <a-timeline-item>step2 2015-09-01</a-timeline-item>
-  <a-timeline-item>step3 2015-09-01</a-timeline-item>
-  <a-timeline-item>step4 2015-09-01</a-timeline-item>
+  <a-timeline-item>2021-04-18 连接管理与command调度</a-timeline-item>
+  <a-timeline-item>2021-04-11 具备基础的连接与响应能力</a-timeline-item>
+  <a-timeline-item>2021-04-01 创建项目</a-timeline-item>
 </a-timeline>
-
