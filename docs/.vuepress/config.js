@@ -14,7 +14,7 @@ module.exports = {
     nav: require("./config/nav"),
     sidebar: require("./config/sidebar"),
     lastUpdated: "上次更新时间",
-    repo: "https://github.com/zpfz/vuepress-creator",
+    repo: "https://github.com/go-developer",
     editLinks: false,
   },
   plugins: [
@@ -65,23 +65,6 @@ module.exports = {
       {
         excludes: ['/about', '/tag/.*']
       }],
-    [ // 页面内锚点插件
-      'vuepress-plugin-right-anchor',
-      {
-        showDepth: 5,
-        ignore: [
-          '/',
-          '/api/'
-          // 更多...
-        ],
-        expand: {
-          default: true,
-          trigger: 'hover'
-        },
-        customClass: 'palette',
-        disableGlobalUI: false,
-      }
-    ],
     [ // 回到顶部插件
       'vuepress-plugin-gotop-plus', {
         // 是否在移动设备上显示(default: true)
@@ -90,17 +73,6 @@ module.exports = {
         threshold: 50
       }
     ],
-    [ // 为当前页面生成二维码
-      'qrcode',
-      {
-        labelText: '生成二维码', // displayed text
-        size: 'small' // QR code size
-      }],
-    [
-      '@vuepress/active-header-links', {
-        sidebarLinkSelector: '.sidebar-link',
-        headerAnchorSelector: '.header-anchor'
-      }],
     ['vuepress-plugin-code-copy', true], // 代码复制插件
   ]
 };
