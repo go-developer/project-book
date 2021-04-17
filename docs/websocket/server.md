@@ -58,7 +58,7 @@ type IWebsocket interface {
 
 ### 加载指令列表(GetCommandList)
 
-此方法返回当前模块支持的指令列表,会自动注册这一组指令,并进行调度,关于指令的实现约束,可参见 : [长连接指令的实现](http://www.baidu.com)
+此方法返回当前模块支持的指令列表,会自动注册这一组指令,并进行调度,关于指令的实现约束,可参见 : [长连接指令的实现](/websocket/command.html)
 
 ### 读取长连接监听的服务端口(GetServerPort)
 
