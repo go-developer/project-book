@@ -78,6 +78,11 @@ func (e exampleCommand) GetCommand() string {
     return "ping"
 }
 
+func (e exampleCommand) GetConfigOption() []config.SetCommandConfig {
+    return []config.SetCommandConfig{config.ClosePushCommandErrorMessage()}
+}
+
+
 func (e exampleCommand) Execute(ctx *context.WSContext, data []byte) error {
     message.Response(ctx, map[string]interface{}{"ping": "pong"})
     return nil

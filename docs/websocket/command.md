@@ -26,6 +26,8 @@ import "github.com/go-developer/websocket/context"
 type ICommand interface {
     // GetCommand 注册的客户端指令
     GetCommand() string
+    // GetConfigOption 获取指令的配置
+    GetConfigOption() []config.SetCommandConfig
     // Execute 执行指令的逻辑
     Execute(ctx *context.WSContext, data []byte) error
 }
@@ -36,6 +38,10 @@ type ICommand interface {
 ### 获取指令标识(GetCommand)
 
 此方法返回  **`指令的标识`** , 此标识需要保证在  **`模块内唯一`**
+
+### 获取指令配置(GetConfigOption)
+
+此方法返回  **`当前指令的配置`** , 此配置会覆盖默认的全局配置, 如需配置指令的  **`个性化配置`** , 请合理配置相关选项
 
 ### 指令逻辑(Execute)
 
