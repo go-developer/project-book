@@ -31,6 +31,8 @@ type IWebsocket interface {
     GetModuleFlag() string
     // GetServerPort 获取长连接监听的端口,多个模块可监听不同的端口
     GetServerPort() int
+    // GetWSServerConfig 获取WS-Server的配置
+    GetWSServerConfig() []config.SetWSServerConfig
 }
 ```
 
@@ -63,6 +65,10 @@ type IWebsocket interface {
 ### 读取长连接监听的服务端口(GetServerPort)
 
 此方法,返回服务 **`监听的端口`** , 若是此端口和其他的模块端口一致, 在  **`获取模块标识`** 不同的情况下,会自动合并两个模块的监听端口, 同时,两个模块的指令按照  **`模块级别隔离`** , 也就是说, 模块间可以有相同的指令。
+
+### 获取WS-Server配置(GetWSServerConfig)
+
+此方法返回  **`WS-Server的配置`** , 用于替换系统默认配置, 具体的配置参照 : [WS-Server配置说明](/websocket/config.html#ws-server配置)
 
 ## 启动
 

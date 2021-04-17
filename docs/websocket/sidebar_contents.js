@@ -3,5 +3,6 @@ module.exports = [
     "introduce",
     "init",
     "server",
-    "command"
+    "command",
+    "config"
 ];
