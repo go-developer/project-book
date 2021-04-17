@@ -8,15 +8,17 @@ title : 配置说明
 
 ## WS-Server配置
 
-|      配置项      |          类型           |              默认值               |                                            功能                                            |
-| :--------------: | :---------------------: | :-------------------------------: | :----------------------------------------------------------------------------------------: |
-|       Mode       |         string          |        config.RunModeDebug        |                            设置运行模式, 只支持 product / debug                            |
-|    LogEnable     |          bool           |               false               |                   是否开启文件日志记录, 默认  **`false, 关闭文件日志`**                    |
-|    LogConsole    |          bool           |               true                |                 是否开启控制台的日志输出, 默认  **`true, 开启控制台日志`**                 |
-|     LogLevel     |      zapcore.Level      |        zapcore.DebugLevel         |        日志基于zap库,  **`不指定`** 或者指定  **`非法level`** , **`均使用默认值`**         |
-|     LogPath      |         string          |          文件日志的路径           |                                项目目录下的**`logs`** 目录                                 | 开启文件日志时, 文件日志的存储路径 |
-|     LogFile      |         string          | wsInstance.GetModuleFlag()+".log" |           开启文件日志时, 文件名称, 不手动设置, 默认值为 :  **`当前模块名.log`**           |
-| LogSplitInterval | logger.TimeIntervalType |    logger.TimeIntervalTypeHour    | 开启文件日志时,日至自动切割的时间间隔,不指定或者指定非法配置,会使用  **`按小时`** 切割日志 |
+|      配置项       |                          类型                           |                         默认值                         |                                                                                  功能                                                                                   |
+| :---------------: | :-----------------------------------------------------: | :----------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Mode        |                         string                          |                  config.RunModeDebug                   |                                                                  设置运行模式, 只支持 product / debug                                                                   |
+|     LogEnable     |                          bool                           |                         false                          |                                                          是否开启文件日志记录, 默认  **`false, 关闭文件日志`**                                                          |
+|    LogConsole     |                          bool                           |                          true                          |                                                       是否开启控制台的日志输出, 默认  **`true, 开启控制台日志`**                                                        |
+|     LogLevel      |                      zapcore.Level                      |                   zapcore.DebugLevel                   |                                               日志基于zap库,  **`不指定`** 或者指定  **`非法level`** , **`均使用默认值`**                                               |
+|      LogPath      |                         string                          |                     文件日志的路径                     |                                                                       项目目录下的**`logs`** 目录                                                                       | 开启文件日志时, 文件日志的存储路径 |
+|      LogFile      |                         string                          |           wsInstance.GetModuleFlag()+".log"            |                                                 开启文件日志时, 文件名称, 不手动设置, 默认值为 :  **`当前模块名.log`**                                                  |
+| LogSplitInterval  |                 logger.TimeIntervalType                 |              logger.TimeIntervalTypeHour               |                                       开启文件日志时,日至自动切割的时间间隔,不指定或者指定非法配置,会使用  **`按小时`** 切割日志                                        |
+|  StoreConnection  |                          bool                           |                          true                          | 是否开启连接存储, 默认  **`开启, 基于内存存储`** , 可手动关闭, 自己 基于 **`上下文WS-Context`** 进行存储管理, 也可 **`重新实现连接管理接口`** ,  并替换掉默认的管理实例 |
+| ConnectionManager | (github.com/go-developer/websocket/storage).IConnection | (github.com/go-developer/websocket/storage).connection |                                                       连接管理接口参见 : [内存连接管理](/webscoket/connection.md)                                                       |
 
 ### Mode值枚举
 

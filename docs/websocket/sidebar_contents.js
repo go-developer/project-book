@@ -4,5 +4,6 @@ module.exports = [
     "init",
     "server",
     "command",
-    "config"
+    "config",
+    "connection"
 ];
