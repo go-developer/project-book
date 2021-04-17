@@ -6,7 +6,7 @@ set -e
 echo "开始构建"
 
 # build
-vuepress build docs
+./node_modules/vuepress/cli.js build docs
 
 echo "构建完成"
 
