@@ -2,5 +2,6 @@ module.exports = [
     "/websocket/",
     "introduce",
     "init",
-    "server"
+    "server",
+    "command"
 ];
