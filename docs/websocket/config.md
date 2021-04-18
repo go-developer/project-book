@@ -20,6 +20,8 @@ type WSServerConfig struct {
     LogSplitInterval  logger.TimeIntervalType // 日至切割的时间间隔
     StoreConnection   bool                    // 存储连接
     ConnectionManager storage.IConnection     // 连接管理实例
+    EnablePprof       bool                    // 开启pprof, 默认关闭
+    PprofPort         int                     // pprof监听的端口
 }
 ```
 
@@ -34,6 +36,8 @@ type WSServerConfig struct {
 | LogSplitInterval  |                 logger.TimeIntervalType                 |              logger.TimeIntervalTypeHour               |                                       开启文件日志时,日至自动切割的时间间隔,不指定或者指定非法配置,会使用  **`按小时`** 切割日志                                        |
 |  StoreConnection  |                          bool                           |                          true                          | 是否开启连接存储, 默认  **`开启, 基于内存存储`** , 可手动关闭, 自己 基于 **`上下文WS-Context`** 进行存储管理, 也可 **`重新实现连接管理接口`** ,  并替换掉默认的管理实例 |
 | ConnectionManager | (github.com/go-developer/websocket/storage).IConnection | (github.com/go-developer/websocket/storage).connection |                                                       连接管理接口参见 : [内存连接管理](/webscoket/connection.md)                                                       |
+|    EnablePprof    |                          bool                           |                         false                          |                                                             是否注册  **`pprof监控的相关接口`** , 默认关闭                                                              |
+|     PporfPort     |                           int                           |                           0                            |                                                       开启注册Pprof监控的端口时, 会将监控相关路由绑定到当前端口上                                                       |
 
 ### Mode值枚举
 

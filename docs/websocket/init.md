@@ -74,6 +74,7 @@ func (e Example) GetServerPort() int {
 func (e Example) GetWSServerConfig() []config.SetWSServerConfig {
     return []config.SetWSServerConfig{
         config.SetWSServerLogEnable("./logs", e.GetModuleFlag()+".log", zapcore.DebugLevel, logger.TimeIntervalTypeHour),
+        config.EnablePprof(10100),
     }
 }
 
