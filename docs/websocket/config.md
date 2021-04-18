@@ -8,6 +8,21 @@ title : 配置说明
 
 ## WS-Server配置
 
+```go
+// WSServerConfig WS-Server的配置
+type WSServerConfig struct {
+    Mode              string                  // 运行模式
+    LogEnable         bool                    // 开启日志
+    LogConsole        bool                    // 开启控制台日志输出
+    LogPath           string                  // 日志路径
+    LogFile           string                  // 日志文件名
+    LogLevel          zapcore.Level           // 日志等级
+    LogSplitInterval  logger.TimeIntervalType // 日至切割的时间间隔
+    StoreConnection   bool                    // 存储连接
+    ConnectionManager storage.IConnection     // 连接管理实例
+}
+```
+
 |      配置项       |                          类型                           |                         默认值                         |                                                                                  功能                                                                                   |
 | :---------------: | :-----------------------------------------------------: | :----------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |       Mode        |                         string                          |                  config.RunModeDebug                   |                                                                  设置运行模式, 只支持 product / debug                                                                   |
@@ -51,6 +66,19 @@ title : 配置说明
 
 ## 指令配置
 
-|        配置项        | 类型  | 默认值 |                             功能                             |
-| :------------------: | :---: | :----: | :----------------------------------------------------------: |
-| PushMessageWithError | bool  |  true  | 指令执行失败时,是否向客户端推送失败信息,默认  **`开启推送`** |
+```go
+// commandConfig 指令相关配置
+type CommandConfig struct {
+    PushMessageWithError bool // 当调度指令时,指令执行错误,是否想客户端推送错误消息
+    LogUpData            bool // 记录上行数据(客户端发送上来的数据)
+    LogDownData          bool // 记录响应数据(服务端向客户端响应的数据)
+    ResponseData         bool // 是否需要向客户端响应数据
+}
+```
+
+|        配置项        | 类型  | 默认值 |                                        功能                                         |
+| :------------------: | :---: | :----: | :---------------------------------------------------------------------------------: |
+| PushMessageWithError | bool  |  true  |            指令执行失败时,是否向客户端推送失败信息,默认  **`开启推送`**             |
+|      LogUpData       | bool  |  true  |                         是否记录上行数据, 默认  **`开启`**                          |
+|     LogDownData      | bool  |  true  |                         是否记录下行数据, 默认  **`开启`**                          |
+|     ResponseData     | bool  |  true  | 自动型客户端响应指令执行结果, 默认  **`开启`** , 如果指令不需要任何响应, 可手动关闭 |

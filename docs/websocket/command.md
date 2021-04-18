@@ -17,11 +17,6 @@ title : 指令开发
 **`指令`** 基于接口实现, 实现 **`ICommand`** 接口,即实现了一个指令, 接口的约束如下 :
 
 ```go
-// Description : 长连接命令的约束
-package abstract
-
-import "github.com/go-developer/websocket/context"
-
 // ICommand 指令
 type ICommand interface {
     // GetCommand 注册的客户端指令
@@ -29,7 +24,7 @@ type ICommand interface {
     // GetConfigOption 获取指令的配置
     GetConfigOption() []config.SetCommandConfig
     // Execute 执行指令的逻辑
-    Execute(ctx *context.WSContext, data []byte) error
+    Execute(ctx *context.WSContext, data []byte) (interface{}, error)
 }
 ```
 

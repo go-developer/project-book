@@ -89,9 +89,8 @@ func (e exampleCommand) GetConfigOption() []config.SetCommandConfig {
 }
 
 
-func (e exampleCommand) Execute(ctx *context.WSContext, data []byte) error {
-    message.Response(ctx, map[string]interface{}{"ping": "pong"})
-    return nil
+func (e exampleCommand) Execute(ctx *context.WSContext, data []byte) (interface{},error) {
+    return map[string]interface{}{"ping": "pong"}, nil
 }
 ```
 
