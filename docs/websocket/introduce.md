@@ -25,15 +25,19 @@ title: 项目简介
 <a-checkbox checked>一对多消息广播</a-checkbox>
 <br/>
 <a-checkbox checked>指令自动调度</a-checkbox>
+<br/>
+<a-checkbox checked>服务内部记录异常日志,支持外部注入日志实例</a-checkbox>
+<br/>
+<a-checkbox checked>pprof状态监控</a-checkbox>
+<br/>
 
 ### TODO 任务
 
 <a-checkbox>管理类API,通过API管理在线连接</a-checkbox>
 <br/>
-<a-checkbox>推送类API,通过API进行消息推动</a-checkbox>
+<a-checkbox>推送类API,通过API进行消息推送</a-checkbox>
 <br/>
-<a-checkbox>服务内部记录异常日志,支持外部注入日志实例</a-checkbox>
-<br/>
+
 
 ## 项目迭代时间线
 

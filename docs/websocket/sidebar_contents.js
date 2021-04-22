@@ -5,6 +5,7 @@ module.exports = [
     "server",
     "command",
     "config",
+    "config_method",
     "connection",
     "wscontext"
 ];
