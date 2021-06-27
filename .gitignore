@@ -7,3 +7,4 @@ public/
 .deploy*/
 themes/butterfly.bak
 docs/.vuepress/dist
+test.sh

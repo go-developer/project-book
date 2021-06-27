@@ -6,6 +6,8 @@ actionLink: /websocket/
 features:
 - title: Websocket
   details: 简单易用的长连接框架,快速上手,可在1min内搭建出自己的长连接服务.
+- title: 深入理解BFE
+  details: 百度七层流量转发服务BFE文档,文档基于官方GITHUB开源文档整理.
 footer: MIT Licensed | Copyright © 2021 张德满
 footerColumn: 2
 footerWrap:

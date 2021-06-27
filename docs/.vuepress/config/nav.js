@@ -9,4 +9,8 @@ module.exports = [
     text: "Websocket",
     link: "/websocket/"
   },
+  {
+    text: "深入理解BFE",
+    link: "/bfe-book/"
+  },
 ];
